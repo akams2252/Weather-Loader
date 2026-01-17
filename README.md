@@ -45,3 +45,13 @@ Projekt został wykonany w celach edukacyjnych jako zaliczenie ćwiczeń.
 1. Skopiuj pliki do katalogu:
    ```bash
    /var/www/html/weather
+2. Skonfiguruj połączenie z bazą danych w pliku:
+   ```bash
+   config.php
+3. Otwórz aplikację w przeglądarce:
+   ```bash
+   [Otwórz aplikację w przeglądarce:](http://localhost/weather)
+3. Uruchom workera:
+   ```bash
+   php worker.php
+   
