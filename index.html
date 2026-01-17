@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Weather Loader</title>
+  <link rel="stylesheet" href="style.css?v4"/>
+  <link rel="icon" href="https://i.imgur.com/uZsSNKu.png" type="image/x-icon"/>
+</head>
+<body>
+  <main class="card">
+    <h1>Weather Loader</h1>
+
+    <div class="grid">
+      <label>
+        Location (miasto / miejsce)
+        <input id="location" value="Cieszyn" />
+      </label>
+
+      <label>
+        Value (°C)
+        <input id="value" type="number" step="0.1" value="0" />
+      </label>
+
+      <label>
+        Timestamp (UTC ISO)
+        <input id="ts" type="text" />
+      </label>
+    </div>
+
+    <div class="buttons">
+      <button id="loadWeather">Pobierz pogodę z API</button>
+      <button id="send">Wyślij do API (kolejka)</button>
+    </div>
+
+    <pre id="log"></pre>
+
+    <p class="hint">
+      Endpointy:
+      <code>/weather/weather.php</code> (POST – kolejka) oraz
+      <code>/weather/weather.php?action=fetch&amp;city=...</code> (GET – pobranie pogody).<br/>
+      Worker: <code>php /var/www/html/weather/worker.php</code> (najlepiej cron)<br/>
+      Parser: <code>https://mscode.cloud/weather/parser.php</code> (<a href="https://mscode.cloud/weather/parser.php">sprawdź wyniki</a>)
+    </p>
+  </main>
+		<script src="app.js?v11"></script>
+	</body>
+</html>
