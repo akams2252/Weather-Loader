@@ -2,11 +2,12 @@
 return [
   'db' => [
     'host' => '127.0.0.1',
-    'name' => 'weather_app',
-    'user' => 'weather_user',
-    'pass' => 'StrongWeatherPass123!',
+    'name' => 'app',
+    'user' => 'user',
+    'pass' => 'pass',
     'charset' => 'utf8mb4',
   ],
-  'secret' => 'ThisIsASecretKey',
+  'secret' => 'write_here',
   'max_attempts' => 3
 ];
+
